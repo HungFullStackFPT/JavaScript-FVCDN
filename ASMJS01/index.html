@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <script>
+        alert("Chào mừng bạn đến với ứng dụng JavaScript đầu tiên!!!");
+        var a = prompt("Nhập tên của bạn :");
+        console.log(a);
+        function nhapThongTin() {
+
+            var thanhPho = prompt("Nhập Thành phố:");
+
+
+            var soDienThoai = prompt("Nhập Số điện thoại:");
+            while (true) {
+                var namSinh = prompt("Nhập Năm sinh:");
+                if (!isNaN(namSinh) && parseInt(namSinh) <= new Date().getFullYear()) {
+                    break;
+                } else {
+                    alert("Năm sinh không hợp lệ. Vui lòng nhập lại.");
+                }
+            }
+
+
+            console.log("\nThông tin bạn đã nhập:");
+            console.log("Thành phố:", thanhPho);
+            console.log("Số điện thoại:", soDienThoai);
+            console.log("Năm sinh:", namSinh);
+        }
+            nhapThongTin();
+    
+
+
+
+    </script>
+
+
+    <button type="button" onclick="alert('FVC Đà Nẵng!')">Click Me!</button>
+
+</body>
+
+</html>
