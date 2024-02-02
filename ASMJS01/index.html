@@ -11,16 +11,16 @@
 <body>
     <script>
         alert("Chào mừng bạn đến với ứng dụng JavaScript đầu tiên!!!");
-        var a = prompt("Nhập tên của bạn :");
+        let a = prompt("Nhập tên của bạn :");
         console.log(a);
         function nhapThongTin() {
 
-            var thanhPho = prompt("Nhập Thành phố:");
+            let thanhPho = prompt("Nhập Thành phố:");
 
 
             var soDienThoai = prompt("Nhập Số điện thoại:");
             while (true) {
-                var namSinh = prompt("Nhập Năm sinh:");
+                let namSinh = prompt("Nhập Năm sinh:");
                 if (!isNaN(namSinh) && parseInt(namSinh) <= new Date().getFullYear()) {
                     break;
                 } else {
